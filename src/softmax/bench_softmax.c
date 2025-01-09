@@ -128,7 +128,7 @@ int main(void) {
             printf("  error norm 2:       %.4a\n", bench_result.error_norm2);
 #           else
             // condensed display
-            printf("%s, %d, %d, %.3e, %.3e, %.3e %.3e\n", 
+            printf("%s, %ld, %ld, %.3e, %.3e, %.3e %.3e\n",
                    benchmarks[benchId].label, n, bench_result.perf_count,
                    bench_result.max_abs_error, bench_result.max_rel_error, bench_result.error_norm2, bench_result.mean_rel_error);
 #           endif
