@@ -3,10 +3,10 @@
 # RISC-V C Compiler
 # available options (the version used must support RVV intrinsics)
 # clang/llvm
-RISCVCLANG=clang  --target=riscv64
+RISCVCLANG ?= clang  --target=riscv64
 # RISCVCC=clang  --target=riscv64
 # GNU Compiler Collection (GCC)
-RISCVCC=riscv64-unknown-elf-gcc 
+RISCVCC ?= riscv64-unknown-elf-gcc 
 
 EXTRA_CFLAGS?=-DCOUNT_INSTRET
 
